@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+/* Default styling for all elements in html pages*/
+* {
+    font-family: 'DM Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    color: #211713;
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+    line-height: 1.25;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight:bolder;
+    font-style: italic;
+}
+
+
+section {
+    background-color: #FFFFFB;
+}
+
+
+.maincontent_flex {
+    flex: 1;
+}
+
+.main_content {
+    margin-bottom: 8px;
+}
+
+/* NAVIGATION BAR */
+
+nav {
+    height: 80px;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8px;
+}
+
+.nav_list {
+    display: flex;
+    list-style-type: none;
+}
+
+/* Personal logo image used in nav bar */
+.nav_logo {
+    height: 50px;
+    width: 80.19px;
+    margin: 0 20px;
+}
+
+.nav_links {
+    margin: 0 20px;
+    color: #211713;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+/* Contact button in nav bar */
+.nav_link_contact {
+    margin: 0 20px;
+    background-color: #FF4B4B;
+    padding: 8px 16px;
+    border-radius: 80px;
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+/* Nav links hover */
+.nav_link_contact:hover {
+    opacity: 80%;
+}
+
+.nav_links:hover {
+    opacity: 80%;
+}
+
+.nav_logo:hover {
+    opacity: 60%;
+}
+
+/* BANNER styling (part of page header) */
+
+.banner {
+    background-color: #FF4B4B;
+    width: 100%;
+    height: 120px;
+}
+
+/* ABOUT ME MAIN SECTION */
+
+#about_me{
+    min-height: 32vh;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 12px;
+}
+
+/* more vertical height for pages that aren't the index */
+#about_mepages {
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.info_section,
+.contactform_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.aboutme_container {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* PROFILE IMAGE FOR THE PAGE HEADER */
+
+.picture_container {
+    height: 150px;
+    width: 150px;
+    margin: 0 auto;
+    box-shadow: 0 1px 4px black;
+    border-radius: 50%;
+    margin-top: -48px;
+    margin-bottom: 24px;
+}
+
+.profile_image {
+    border-radius: 50%;
+    width: 100%;
+}
+
+/* HEADER TITLE AND CONTENT */
+.aboutme_title {
+    margin-bottom: 16px;
+}
+
+.aboutme_paragraph {
+    font-size: 16px;
+    margin-bottom: 28px;
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+
+
+/* SOCIAL LINKS ICONS */
+
+.aboutme_socials {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+    margin-top: 20px;
+}
+.social_link {
+    font-size: 28px;
+    text-decoration: none;
+    padding: 0 24px;
+    color: #171515;
+}
+
+.social_link:hover {
+    opacity: 80%
+}
+
+/*  FOOTER */
+
+footer {
+    background-color: #40434F;
+}
+
+/* Personal logo image in footer */
+.footer_logo {
+    margin-bottom: 20px;
+}
+
+.footer_logoimage {
+    height: 50px;
+    width: 80.19px;
+}
+
+.footer_logoimage:hover {
+    opacity: 80%;
+}
+
+/* Links in footer */
+.footer_pages {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 28px;
+}
+
+.footer_row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2% 0 2% 0;
+}
+
+.footer_links,
+.footer_copyright {
+    color: white;
+}
+
+.footer_copyright {
+    font-size: 12px;
+}
+
+.footer_links:hover {
+    text-decoration: none;
+}
+
+
+
+
+/*  RESPONSIVE DESIGN */
+
+
+/* Tablet sizing */
+@media (max-width: 830px) {
+    nav {
+        height: 64px;
+    }
+}
+
+/* Small phone sizing */
+@media (max-width: 480px) {
+    .nav_link:not(:last-child) {
+        display: none;
+    }
+}

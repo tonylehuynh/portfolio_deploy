@@ -1,0 +1,80 @@
+/* ABOUT ME PAGE STYLING */
+
+.bio_section {
+    display: flex;
+    flex-direction: row;
+    max-width: 700px;
+    margin: 0 auto;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+    padding-bottom: 4vh;
+    border-bottom: 1px solid #C7C7C7;
+}
+
+/* SKILLS LIST */
+
+.skills_container {
+    width: 33%;
+    margin-right: 44px;
+    line-height: 40px;
+}
+
+.bio_headings {
+    text-align: left;
+    border-bottom: 1px solid #C7C7C7;
+    margin-bottom: 16px;
+}
+
+.listitems_container {
+    font-size: 16px;
+}
+
+.skills_list {
+    list-style-type: circle;
+    padding-left: 24px;
+}
+
+/* BIO CONTENT */
+
+.bio_container {
+    width: 67%;
+}
+
+
+/*  RESPONSIVE DESIGN */
+
+
+/* Tablet sizing */
+@media (max-width: 830px) {
+    .bio_section {
+        max-width: 600px;
+    }
+}
+
+/* Small phone sizing */
+@media (max-width: 480px) {
+    .bio_section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        max-width: 360px;
+        margin-top: 12px;
+        padding: 16px 16px;
+    }
+
+    .skills_container {
+        width: 100%;
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+    
+    .bio_container {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .bio_section {
+        border-bottom: none;
+    }
+}

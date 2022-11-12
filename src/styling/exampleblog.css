@@ -1,0 +1,78 @@
+/* STYLING FOR EXAMPLE BLOG POST */
+
+/* Header + Blog Details styling */
+.blogexample_section {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 700px;
+    margin-bottom: 4vh;
+}
+
+.blogexample_title {
+    text-align: left;
+    border-top: 1px solid #C7C7C7;;
+    border-bottom: 1px solid #C7C7C7;
+    margin: 24px 0;
+    font-size: 32px;
+}
+
+.blogexample_header {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #C7C7C7;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.tags_container {
+    width: 33%;
+}
+
+.blogexample_tags {
+    opacity: 90%;
+}
+
+/* Blog content styling */
+
+.content_title {
+    text-align: left;
+}
+
+.blog_content {
+    padding: 20px 0;
+    margin-bottom: 8px;
+}
+
+/* Blog example image */
+
+#blogexample_img {
+    width: 240px;
+}
+
+.img_caption {
+    font-size: 12px;
+}
+
+/*  RESPONSIVE DESIGN */
+
+
+/* Tablet sizing */
+@media (max-width: 830px) {
+    .blogexample_section,
+    .info_section {
+        max-width: 640px;
+    }
+}
+
+/* Small phone sizing */
+@media (max-width: 480px) {
+    .blogexample_section,
+    .info_section {
+        max-width: 320px;
+    }
+
+    .tags_container {
+        display: none;
+    }
+}

@@ -1,0 +1,105 @@
+/* STYLING FOR THE WORK HISTORY PAGE */
+
+.location_paragraph {
+    opacity: 90%;
+}
+
+.workhistory_section {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 700px;
+}
+
+.fulltime_container {
+    margin-top: 32px;
+    margin-bottom: 20px;
+}
+
+/* STUDY SECTION */
+.study_container {
+    margin-bottom: 20px;
+}
+
+.work_header {
+    border-bottom: 1px solid #C7C7C7;
+    padding-bottom: 4px;
+    margin-bottom: 20px;
+}
+
+.work_header,
+.work_position,
+.work_dates,
+.work_list {
+    text-align: left;
+}
+
+/* WORK DETAILS SECTION */
+.work_container {
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 16px 32px;
+    margin-bottom: 16px;
+    font-size: 14px;
+}
+
+.work_container:hover {
+    box-shadow: 0px 0px 0px 1.5px grey;
+}
+
+.work_position,
+.work_dates {
+    margin-bottom: 8px;
+}
+
+.work_dates {
+    font-style: italic;
+    font-weight: 100;
+}
+
+.work_list {
+    line-height: 28px;
+}
+
+
+/* RESUME BUTTON */
+
+.resume_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 16px;
+}
+.work_resume {
+    font-size: 12px;
+    color: white;
+    background-color: #40434F;
+    padding: 4px 4px;
+    border-radius: 4px;
+    text-decoration: none;
+    opacity: 90%;
+    
+}
+
+.work_resume:hover {
+    opacity: 70%;
+}
+
+
+/*  RESPONSIVE DESIGN */
+
+
+/* Tablet sizing */
+@media (max-width: 830px) {
+    .workhistory_section {
+        max-width: 640px;
+    }
+}
+
+/* Small phone sizing */
+@media (max-width: 480px) {
+    .workhistory_section {
+        max-width: 320px;
+    }
+}
